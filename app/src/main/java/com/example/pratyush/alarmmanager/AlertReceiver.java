@@ -16,5 +16,8 @@ public class  AlertReceiver extends BroadcastReceiver {
                 "Time to close your Module:- MODULE CLOSE :-)");
         notificationhelper.getManager().notify(1,nb.build());
 
+        MediaPlayer mediaPlayer = MediaPlayer.create(context, Settings.System.DEFAULT_RINGTONE_URI);
+        mediaPlayer.start();
+        //Default ringtone played now
     }
 }
